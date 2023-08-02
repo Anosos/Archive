@@ -1,0 +1,20 @@
+//sami
+#include<iostream>
+using namespace std;
+int main()
+{
+int n , i ;
+cin>>n ;
+int arr[n];
+int *ptr;
+for(i=0;i<n;i++)
+{
+cin>>arr[i];
+}
+ ptr=&arr[n-1];
+   for(i=0;i<n;i++)
+   {
+       cout<<*(ptr--)<<" " ;
+   }
+
+}
