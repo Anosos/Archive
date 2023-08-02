@@ -1,0 +1,20 @@
+//sami
+#include <iostream>
+#include <string>
+#include<iomanip>
+#include <math.h>
+#include<algorithm>
+using namespace std;
+
+int main() {
+string F;
+    getline(cin, F); 
+
+   
+    for (int i = 0; i < F.size(); i++) {
+          if (F[i] >= 'a' && F[i] <= 'z')
+          F[i]-=32;
+          
+}
+cout<<F;
+}
