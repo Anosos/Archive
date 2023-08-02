@@ -1,0 +1,29 @@
+//sami
+#include <iostream>
+#include <string>
+#include<iomanip>
+#include <math.h>
+#include<algorithm>
+using namespace std;
+int fib(int n) {
+    if (n == 1 || n == 0)
+        return n;
+    else
+        return fib(n - 1) + fib(n - 2);
+}
+
+int main() {
+int t;
+    cout << "num of test cases: ";
+    cin >> t;
+
+    while (t) {
+        int x;
+        cout << "num to find its Fibonacci: ";
+        cin >> x;
+        cout << fib(x) << endl;
+        t--;
+    }
+
+    return 0;
+}
