@@ -1,0 +1,25 @@
+//sami
+#include <iostream>
+#include <string>
+#include<iomanip>
+#include <math.h>
+#include<algorithm>
+using namespace std;
+
+int main() {
+ int temp, n1, n2;
+    int* ptr1, * ptr2;
+    ptr1 = &n1;
+    ptr2 = &n2;
+
+    cout << "before swap:\n";
+    cin >> n1 >> n2;
+
+    temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+
+    cout << "after swap:\n";
+    cout << n1 << " " << n2;
+
+}
